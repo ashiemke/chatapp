@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define kNewDataForConversationNotificationName @"com.chat.newdataforconversation"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

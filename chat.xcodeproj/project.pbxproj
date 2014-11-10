@@ -14,6 +14,24 @@
 		A011AA961A0AA799004411A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A011AA951A0AA799004411A2 /* Images.xcassets */; };
 		A011AA991A0AA799004411A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A011AA971A0AA799004411A2 /* LaunchScreen.xib */; };
 		A011AAA51A0AA799004411A2 /* chatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A011AAA41A0AA799004411A2 /* chatTests.m */; };
+		A045A3821A0AAEC200E62FFA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = A045A3811A0AAEC200E62FFA /* Message.m */; };
+		A045A3851A0AB06800E62FFA /* PFUser+AvatarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A045A3841A0AB06800E62FFA /* PFUser+AvatarImage.m */; };
+		A045A38D1A0AC25800E62FFA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A38C1A0AC25800E62FFA /* AudioToolbox.framework */; };
+		A045A38F1A0AC26000E62FFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A38E1A0AC26000E62FFA /* CFNetwork.framework */; };
+		A045A3911A0AC26800E62FFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3901A0AC26800E62FFA /* CoreGraphics.framework */; };
+		A045A3931A0AC27400E62FFA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3921A0AC27400E62FFA /* CoreLocation.framework */; };
+		A045A3951A0AC27B00E62FFA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3941A0AC27B00E62FFA /* libz.dylib */; };
+		A045A3971A0AC28200E62FFA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3961A0AC28200E62FFA /* MobileCoreServices.framework */; };
+		A045A3991A0AC28900E62FFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3981A0AC28900E62FFA /* QuartzCore.framework */; };
+		A045A39B1A0AC29000E62FFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A39A1A0AC29000E62FFA /* Security.framework */; };
+		A045A39D1A0AC29700E62FFA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A39C1A0AC29700E62FFA /* StoreKit.framework */; };
+		A045A39F1A0AC29F00E62FFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A39E1A0AC29F00E62FFA /* SystemConfiguration.framework */; };
+		A045A3A11A0ACE1300E62FFA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A045A3A01A0ACE1300E62FFA /* Social.framework */; };
+		A045A3A41A0ADF7D00E62FFA /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A045A3A31A0ADF7D00E62FFA /* MessagesViewController.m */; };
+		A045A3AB1A0B31CF00E62FFA /* ConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A045A3AA1A0B31CF00E62FFA /* ConversationTableViewCell.m */; };
+		A06928821A0C6759008D1C34 /* ConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06928811A0C6759008D1C34 /* ConversationsViewController.m */; };
+		A06928851A0C6DA0008D1C34 /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = A06928841A0C6DA0008D1C34 /* Conversation.m */; };
+		A069288A1A0D46EA008D1C34 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06928891A0D46EA008D1C34 /* LoginViewController.xib */; };
 		AA68E64CEC104915B9F7C899 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C43F426666456B9631FEF3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +60,33 @@
 		A011AA9E1A0AA799004411A2 /* chatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A011AAA31A0AA799004411A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A011AAA41A0AA799004411A2 /* chatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatTests.m; sourceTree = "<group>"; };
-		A045A37D1A0AA81000E62FFA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A045A3801A0AAEC200E62FFA /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		A045A3811A0AAEC200E62FFA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		A045A3831A0AB06800E62FFA /* PFUser+AvatarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+AvatarImage.h"; sourceTree = "<group>"; };
+		A045A3841A0AB06800E62FFA /* PFUser+AvatarImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+AvatarImage.m"; sourceTree = "<group>"; };
+		A045A3861A0AC20900E62FFA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A045A3871A0AC20900E62FFA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A045A3881A0AC20900E62FFA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		A045A38C1A0AC25800E62FFA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A045A38E1A0AC26000E62FFA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A045A3901A0AC26800E62FFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A045A3921A0AC27400E62FFA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A045A3941A0AC27B00E62FFA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A045A3961A0AC28200E62FFA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A045A3981A0AC28900E62FFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A045A39A1A0AC29000E62FFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A045A39C1A0AC29700E62FFA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A045A39E1A0AC29F00E62FFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A045A3A01A0ACE1300E62FFA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A045A3A21A0ADF7D00E62FFA /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		A045A3A31A0ADF7D00E62FFA /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		A045A3A91A0B31CF00E62FFA /* ConversationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationTableViewCell.h; sourceTree = "<group>"; };
+		A045A3AA1A0B31CF00E62FFA /* ConversationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationTableViewCell.m; sourceTree = "<group>"; };
+		A06928801A0C6759008D1C34 /* ConversationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationsViewController.h; sourceTree = "<group>"; };
+		A06928811A0C6759008D1C34 /* ConversationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationsViewController.m; sourceTree = "<group>"; };
+		A06928831A0C6DA0008D1C34 /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		A06928841A0C6DA0008D1C34 /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		A06928891A0D46EA008D1C34 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C10C31C8A59F40219A6F53C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +95,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A045A3A11A0ACE1300E62FFA /* Social.framework in Frameworks */,
+				A045A39F1A0AC29F00E62FFA /* SystemConfiguration.framework in Frameworks */,
+				A045A39D1A0AC29700E62FFA /* StoreKit.framework in Frameworks */,
+				A045A39B1A0AC29000E62FFA /* Security.framework in Frameworks */,
+				A045A3991A0AC28900E62FFA /* QuartzCore.framework in Frameworks */,
+				A045A3971A0AC28200E62FFA /* MobileCoreServices.framework in Frameworks */,
+				A045A3951A0AC27B00E62FFA /* libz.dylib in Frameworks */,
+				A045A3931A0AC27400E62FFA /* CoreLocation.framework in Frameworks */,
+				A045A3911A0AC26800E62FFA /* CoreGraphics.framework in Frameworks */,
+				A045A38F1A0AC26000E62FFA /* CFNetwork.framework in Frameworks */,
+				A045A38D1A0AC25800E62FFA /* AudioToolbox.framework in Frameworks */,
 				AA68E64CEC104915B9F7C899 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +123,20 @@
 		0BD4BF1D3F0D41439562072A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A045A3A01A0ACE1300E62FFA /* Social.framework */,
+				A045A39E1A0AC29F00E62FFA /* SystemConfiguration.framework */,
+				A045A39C1A0AC29700E62FFA /* StoreKit.framework */,
+				A045A39A1A0AC29000E62FFA /* Security.framework */,
+				A045A3981A0AC28900E62FFA /* QuartzCore.framework */,
+				A045A3961A0AC28200E62FFA /* MobileCoreServices.framework */,
+				A045A3941A0AC27B00E62FFA /* libz.dylib */,
+				A045A3921A0AC27400E62FFA /* CoreLocation.framework */,
+				A045A3901A0AC26800E62FFA /* CoreGraphics.framework */,
+				A045A38E1A0AC26000E62FFA /* CFNetwork.framework */,
+				A045A38C1A0AC25800E62FFA /* AudioToolbox.framework */,
+				A045A3861A0AC20900E62FFA /* Bolts.framework */,
+				A045A3871A0AC20900E62FFA /* Parse.framework */,
+				A045A3881A0AC20900E62FFA /* ParseFacebookUtils.framework */,
 				97C43F426666456B9631FEF3 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -76,7 +145,6 @@
 		A011AA7C1A0AA799004411A2 = {
 			isa = PBXGroup;
 			children = (
-				A045A37D1A0AA81000E62FFA /* Podfile */,
 				A011AA871A0AA799004411A2 /* chat */,
 				A011AAA11A0AA799004411A2 /* chatTests */,
 				A011AA861A0AA799004411A2 /* Products */,
@@ -97,11 +165,19 @@
 		A011AA871A0AA799004411A2 /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				A045A37F1A0AAEA600E62FFA /* Models */,
 				A011AA8C1A0AA799004411A2 /* AppDelegate.h */,
 				A011AA8D1A0AA799004411A2 /* AppDelegate.m */,
 				A011AA8F1A0AA799004411A2 /* LoginViewController.h */,
 				A011AA901A0AA799004411A2 /* LoginViewController.m */,
+				A045A3A21A0ADF7D00E62FFA /* MessagesViewController.h */,
+				A045A3A31A0ADF7D00E62FFA /* MessagesViewController.m */,
+				A06928801A0C6759008D1C34 /* ConversationsViewController.h */,
+				A06928811A0C6759008D1C34 /* ConversationsViewController.m */,
+				A045A3A91A0B31CF00E62FFA /* ConversationTableViewCell.h */,
+				A045A3AA1A0B31CF00E62FFA /* ConversationTableViewCell.m */,
 				A011AA921A0AA799004411A2 /* Main.storyboard */,
+				A06928891A0D46EA008D1C34 /* LoginViewController.xib */,
 				A011AA951A0AA799004411A2 /* Images.xcassets */,
 				A011AA971A0AA799004411A2 /* LaunchScreen.xib */,
 				A011AA881A0AA799004411A2 /* Supporting Files */,
@@ -133,6 +209,19 @@
 				A011AAA31A0AA799004411A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A045A37F1A0AAEA600E62FFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A045A3801A0AAEC200E62FFA /* Message.h */,
+				A045A3811A0AAEC200E62FFA /* Message.m */,
+				A06928831A0C6DA0008D1C34 /* Conversation.h */,
+				A06928841A0C6DA0008D1C34 /* Conversation.m */,
+				A045A3831A0AB06800E62FFA /* PFUser+AvatarImage.h */,
+				A045A3841A0AB06800E62FFA /* PFUser+AvatarImage.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +309,7 @@
 				A011AA941A0AA799004411A2 /* Main.storyboard in Resources */,
 				A011AA991A0AA799004411A2 /* LaunchScreen.xib in Resources */,
 				A011AA961A0AA799004411A2 /* Images.xcassets in Resources */,
+				A069288A1A0D46EA008D1C34 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A045A3851A0AB06800E62FFA /* PFUser+AvatarImage.m in Sources */,
 				A011AA911A0AA799004411A2 /* LoginViewController.m in Sources */,
+				A045A3A41A0ADF7D00E62FFA /* MessagesViewController.m in Sources */,
+				A045A3821A0AAEC200E62FFA /* Message.m in Sources */,
 				A011AA8E1A0AA799004411A2 /* AppDelegate.m in Sources */,
+				A06928821A0C6759008D1C34 /* ConversationsViewController.m in Sources */,
+				A06928851A0C6DA0008D1C34 /* Conversation.m in Sources */,
 				A011AA8B1A0AA799004411A2 /* main.m in Sources */,
+				A045A3AB1A0B31CF00E62FFA /* ConversationTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +416,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -361,7 +457,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -395,9 +491,14 @@
 			baseConfigurationReference = C10C31C8A59F40219A6F53C7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,9 +507,14 @@
 			baseConfigurationReference = C10C31C8A59F40219A6F53C7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

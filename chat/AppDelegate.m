@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import <SVProgressHUD.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"4601bz0aVUS3PU3Bcb4Jl37YOEaZLN38cGdnGoQD"
+                  clientKey:@"uBmLBAGZ8oW7rwmXdset7S32vXxFI3WdW3B4jSjY"];
+    
+    // handle notification data if we start up cold
+    NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (notificationPayload && notificationPayload[@"conversation"]){
+        [self handleNotificationForConversationId:notificationPayload[@"conversation"]];
+    }
+    
     return YES;
 }
 
@@ -35,11 +46,45 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // Clear the app badge when the app starts
+    if ([PFInstallation currentInstallation].badge != 0) {
+        [PFInstallation currentInstallation].badge = 0;
+        [[PFInstallation currentInstallation] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (error) {
+                // TODO: Handle error
+            }
+            else {
+                // only update locally if the remote update succeeded so they always match
+                [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+            }
+        }];
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current Installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))handler {
+    
+    if (userInfo[@"conversation"]){
+        [self handleNotificationForConversationId:userInfo[@"conversation"]];
+    }
+    
+}
+
+- (void) handleNotificationForConversationId:(NSString*)conversationId{
+//    PFObject *conversation = [PFObject objectWithoutDataWithClassName:@"Conversation" objectId:conversationId];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNewDataForConversationNotificationName object:self userInfo:@{@"conversationId":conversationId}];
+    
 }
 
 @end

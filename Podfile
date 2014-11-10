@@ -1,5 +1,6 @@
 pod 'SVProgressHUD'
 pod 'ParseModel'
-pod 'Parse'
 pod 'JSQMessagesViewController'
-
+pod 'BlocksKit'
+pod 'Parse'
+pod 'Facebook-iOS-SDK'
